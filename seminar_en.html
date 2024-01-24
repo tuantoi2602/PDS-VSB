@@ -1,0 +1,117 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:cc="http://creativecommons.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	
+	<style type="text/css" media="screen, projection">
+	<!--
+	@import url(../common/css/style.css);
+	-->
+	</style>
+
+	<title>PDS</title>	
+</head>
+<body>
+	<div id="wrapper">
+		<div class="content">
+			<h1>Instructions for the elaboration of seminar work in PDS</h1>
+			<h2>Essentials</h2>
+			<p>
+			The topic of the seminar work is chosen by the students independently and they are consulted with the lecturer. During the consultation, they also agree on the content and scope of the work. Each work will consist of two parts - implementation - experimental and textual. During the elaboration, the student's task is to get acquainted with the chosen topic carefully.
+			</p>
+			<p>
+			<strong>Implementation</strong> part consists in the implementation of the chosen method (algorithm) using some language / tool for parallel calculations. The seminar work will focus on the parallel aspect of the issue and the comparison of one or more parallel approaches with a sequential approach to the selected task. It can look like, for example, that one algorithm solving one task is implemented using multiple parallel technologies (for example, multicore + OpenCL). Or it is implemented using one technology of several different algorithms solving the same task. The work can also be conceived as testing a library, technology, etc. (eg MPI library in Java, python, etc.). Be careful, it is not enough to just use a library function (for example SGEMM) if I am solving a simple problem such as multiplying matrices. The use of library methods, on the other hand, is allowed if they are part of a more complex calculation (eg spectral decomposition, PCA). Parallel Matlab is allowed.
+			</p>
+
+			<p>
+			<strong>The experimental</strong> part consists in testing the implementation. This means that measurements will be made that will compare the performance of sequential and parallel implementations of the given algorithms. Experiments and measurements will be performed on "reasonable" data, eg the minimum dimensions of matrices (graphs) will be in the order of thousands (an exception may occur for tests with one / small number of fibers, etc.). Measurement time measurements must always be performed repeatedly and average values ​​presented, as calculation times may vary.
+			</p>
+
+			<p>
+			<strong>The text</strong> (theoretical) part is then focused on the description of the problem and the chosen algorithm. The text part cannot be understood as program documentation or just a description of program control. The text will contain:
+			</p>
+			<ol>
+				<li>Introduction of the problem.</li>
+				<li>State of the art - description of the usual algorithms / ways to solve the problem.</li>
+				<li>Detailed description of the selected algorithm (the description must be complete enough for the reader to be able to implement the algorithm without looking for further information). E.g. if an action (finding eigenvalues) is part of the task, it must be described how to achieve it.</li>
+				<li>Experiments, measurements, evaluation (tables and graphs can be used). In this part it is possible to state hypotheses (we expect that ...) and then confront them with the observed reality (but we see that ...).</li>
+				<li>Conclusion - evaluation of work, future work, etc.</li>
+			</ol>
+			<p>
+			The text part should be in the form of a professional text, ie. it will contain literature and citations will be used in the text. Therefore, Latex is of course recommended for drafting the text.
+			</p>
+			
+			<h2>Sample topics</h2>
+			<p>
+			<ol>
+			  <li><strong>Parallel processing of (big) data</strong> 
+			      <ul>
+				<li>
+				 text analysis (similarity of texts; parallel methods of searching in text; sentiment analysis; analysis of text streams; topic detection; topic development; summarization and reduction)..
+				</li>
+				<li>
+				  network analysis (parallel calculation of network properties; detection of patterns in networks; detection of similarities in networks; search in networks; decompositions of networks).
+				</li>
+				<li>
+				  cluster analysis (clustering methods; cluster visualization; clustering of dynamic networks).
+				</li>
+				<li>
+				  dimension reduction (linear and nonlinear methods of dimension reduction).
+				</li>
+			    </ul>
+			  </li>
+			  <li><strong>Parallel image analysis</strong> 
+			      <ul>
+				<li>
+				  object recognition (pattern matching, dimension reduction, face detection, detection of inscriptions, symbols, barcodes and QR codes).
+				</li>
+				<li>
+				  compression of visual information (seam carving; deep neural networks).
+				</li>
+				<li>
+				 spectral decomposition, spectral clustering
+				</li>
+			    </ul>
+			  </li>
+			  <li><strong>Parallel bio-inspired methods</strong>
+			      <ul>
+				<li>
+				  parallel metaheuristics (parallelization of different types of metaheuristics; coarse and fine-grained parallelization).
+				</li>
+				<li>
+				  implementation on various platforms (SMP; distributed; data-parallel; embedded)
+				</li>
+				<li>
+				  new methods and their effective parallelization (CMA-ES, EDA)
+				</li>				
+				<li>
+				  multiobjective methods
+				</li>
+			    </ul>
+			  </li>
+			</ol>
+			</p>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+		</div>
+	</div>
+	<div>
+		<div class="footer_textitem">			
+		</div>
+	</div>
+
+</body>
+</html>
